@@ -15,12 +15,12 @@ package starling.filters
 		public var xComponent:Number;	// density on x axis
 		public var yComponent:Number;	// density on y axis, no effect on RADIAL sources	
 		
-		public var origin:Point;		// center of radial waves - relative tex coordinates 0-1
+		public var origin:Point;		// center of radial waves - relative tex coordinates 0-1, not used on LINEAR
 		public var fallOff:Number;		// not used
-		public var aspect:Number;		// texture aspect
+		public var aspect:Number;		// texture aspect, not used on LINEAR
 		
 		public var time:Number;
-		public var propagation:Number;	// wave propagation speed, 0=instant
+		public var propagation:Number;	// wave propagation speed, 0=instant, not used on LINEAR
 		
 		
 		public function WaveSource(type:int, amplitude:Number = .01, frequency:Number = 5, xComponent:Number = 20, yComponent:Number = 5, origin:Point = null, aspect:Number = 1, propagation:Number=0, fallOff:Number = 0) 
